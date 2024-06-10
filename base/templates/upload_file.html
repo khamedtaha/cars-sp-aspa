@@ -8,7 +8,21 @@
 
 </head>
 <body>
-   
+   <div class="container p-5">
+      <form method="POST"  action="" enctype="multipart/form-data">
+         {% csrf_token %}
+         <div class="mb-3">
+             <label for="disabledTextInput" class="form-label">Name Video</label>
+             <input name ="name" type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
+           </div>
+         <div class="mb-3">
+            <label for="formFileSm" class="form-label">Mp4</label>
+            <input name="video"   class="form-control form-control-sm" id="formFileSm" type="file">
+           </div>
+
+           <button type="submit" class="btn btn-primary">Submit</button>
+       </form>
+   </div>
 
 
 
